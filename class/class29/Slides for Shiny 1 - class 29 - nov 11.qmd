@@ -1,0 +1,61 @@
+---
+title: "Shiny 1 -Class 29 <br>2024 Nov 11"
+author: "MA615"
+format: revealjs
+editor: visual
+---
+
+```{=html}
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js""></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
+    // onClick function for all plots (img's)
+    $('img:not(.zoomImg)').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
+      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 50px #888888', zIndex: '50', overflow: 'auto', maxHeight: '100%'});
+    });
+    // onClick function for zoomImg
+    $('img.zoomImg').click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
+    });
+  });
+</script>
+```
+![](hadley.png)
+
+## Shiny in the MA615 plan
+
+![](Overview-MA615-pg-nov11.png)
+
+## Material for Shiny
+
+-   Hadley's Mastering Shiny with supporting material
+
+    -   <a href="https://mastering-shiny.org/basic-app.html" target="_blank">H.Wickham, *Mastering Shiny*</a>
+    -   <a href="https://mastering-shiny-solutions.netlify.app/" target="_blank">H. Baek, *Mastering Shiny Solutions* </a>
+    -   <a href="https://mastering-shiny-solutions.org/" target="_blank">The R4DS Online Learning Community, *Mastering Shiny Solutions Solutions*</a>
+    -   <a href="https://bookdown.org/hadrien/how_to_build_a_shiny_app_from_scratch" target="_blank">Hadrien\@rstudio.com, *how to build a shiny app from scratch* </a>
+
+-   <a href="https://rstudio.github.io/cheatsheets/shiny-python.pdf" target="_blank">Shiny cheatsheet</a>
+
+-   Examples
+
+## Cheatsheet
+
+![](shiny-cs_Page_1.jpg)
+
+------------------------------------------------------------------------
+
+![](shiny-cs_Page_2.jpg)
+
+## Examples
+
+Hadley_1 Hadley_2
+
+### Homework (Github link due on Friday, 15 Nov. )
+
+1.  What is the difference between Hadley_1 and Hadley_2? Use the functions Katia showed last Wednesday to investigate the difference.
+
+2.  Prepare Chapters 2-4 from Mastering Shiny. complete in submit the homework in sections 2.3.5, 3.3.6, and 4.8.
