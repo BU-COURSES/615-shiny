@@ -23,6 +23,7 @@ editor: visual
   });
 </script>
 ```
+
 ![](hadley.png)
 
 ## Shiny in the MA615 plan
